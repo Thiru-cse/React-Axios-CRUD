@@ -78,8 +78,6 @@ class Post extends Component {
         this.getPost();
     }
 
-
-
     render() {
         console.log("Rendered!!");
         return (
