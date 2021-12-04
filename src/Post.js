@@ -52,6 +52,7 @@ class Post extends Component {
     deletePost = async (id) => {
         try {
         const {data} = await axios.delete(`${API_URL}/${id}`);
+        console.log(data);
         const post =  this.state.post.filter((post) => post.id !== id);
         this.setState({ post });
         } catch (err) {
